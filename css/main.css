@@ -1,0 +1,171 @@
+/*defaults*/
+
+* {
+	margin: 0;
+	border: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+html,
+body {
+	background-color: #DCF280;
+	font-size: 62.5%;
+}
+
+.wrapper {
+	width: 100%;
+	height: auto;
+	font-family: 'Raleway', sans-serif;
+}
+
+
+/*layout*/
+
+.masthead {
+	width: 100%;
+	min-height: 150px;
+	font-family: 'Bitter', serif;
+	text-transform: uppercase;
+	background-color: #C7E33D;
+	padding-left: 20px;
+	padding-bottom: 20px;
+	padding-top: 10px;
+}
+
+.masthead h2 {
+	font-size: 2.8rem;
+	color: #454116;
+	padding-top: 10px;
+	padding-left: 30px;
+}
+
+.masthead h1 {
+	font-size: 4rem;
+	padding-top: 15px;
+	color: #454116;
+	padding-left: 30px;
+}
+
+form {
+	max-width: 85%;
+	margin: 2rem auto;
+	padding-left: 20px;
+	font-size: 2.5rem;
+	color: #38321B;
+}
+
+.box {
+	margin: 1.2rem 0;
+}
+
+.submitbtn {
+	/*clear: both;*/
+	background-color: #C7E33D;
+	width: 90px;
+	font-weight: 600;
+	font-size: 1.73rem;
+	margin-top: 20px;
+	text-align: center;
+	padding-left: 0;
+	color:#454116;
+}
+
+input {
+	display: block;
+	text-align: left;
+	padding-left: 10px;
+	height: 35px;
+	font-size: 1.5rem;
+	color: #38321B;
+	width: 85%;
+}
+
+label {
+	visibility: hidden;
+	display: block;
+	width: 85%;
+	text-align: left;
+	color: #38321B;
+	margin-bottom: 5px;
+	white-space: nowrap;
+}
+
+
+
+
+/*Media queries*/
+
+@media all and (min-width:500px) and (max-width:700px) {
+	input {
+		padding-left: 10px;
+		padding-top: 10px;
+		font-size: 1.5rem;
+		color: #38321B;
+		width: 80%;
+	}
+	label {
+		visibility: visible;
+		display: block;
+		padding-top: 5px;
+		font-size: 1.7rem;
+		font-weight: 600;
+		width: 80%;
+	}
+}
+
+@media all and (max-width:900px) and (min-width:700px) {
+	.box {
+		width: 50%;
+		float: left;
+	}
+	label {
+		visibility: visible;
+		padding-top: 5px;
+		font-size: 1.9rem;
+		font-weight: 600;
+		
+	}
+	input {
+		padding-left: 10px;
+		width: 250px;
+	}
+	.btn {
+		clear: both;
+		background-color: #C7E33D;
+		width: 80px;
+		font-weight: 600;
+		font-size: 1.73rem;
+		text-align: center;
+	}
+}
+
+@media all and (min-width:900px) {
+	label {
+		display: inline;
+		visibility: visible;
+		float: left;
+		width: 13%;
+		text-align: left;
+		margin: 0 0 0 3rem;
+		padding: 10px 5px 10px 0;
+		font-size: 1.6rem;
+		font-weight: 600;
+	}
+	input {
+		float: right;
+		width: 70%;
+	}
+	.box {
+		margin: 0.5rem 0;
+		float: left;
+		width: 50%;
+	}
+	.submitbtn {
+		float: left;
+		text-align: center;
+		margin-top: 15px;
+		margin-left:25px;
+	}
+}
